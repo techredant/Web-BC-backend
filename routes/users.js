@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const connectDB = require("../db"); // your MongoDB connect helper
-const Profile = require("../models/Profile"); // adjust path if needed
+const connectDB = require("../mongodb/db"); // your MongoDB connect helper
+const Profile = require("../mongodb/models/profile"); // adjust path if needed
 
 // ================= GET ALL ACTIVE USERS =================
 // GET /api/users

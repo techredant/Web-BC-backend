@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Post = require("../models/Post");
+const Post = require("../mongodb/models/post");
 
 // ================= GET LIKES =================
 // GET /api/likes/:post_id

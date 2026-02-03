@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Account = require("../models/Account"); // Your Mongo model
+const Account = require("../mongodb/models/profile"); // Your Mongo model
 
 // ✅ CREATE ACCOUNT
 router.post("/register", async (req, res) => {

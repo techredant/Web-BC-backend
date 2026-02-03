@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Status = require("../models/StatusPost");
+const Status = require("../mongodb/models/statusPost");
 
 // ================= GET SINGLE STATUS POST =================
 // GET /api/statusPosts/:post_id

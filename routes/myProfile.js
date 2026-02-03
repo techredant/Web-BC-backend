@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const Profile = require("../models/Profile");
-const Post = require("../models/Post");
+const Profile = require("../mongodb/models/profile");
+const Post = require("../mongodb/models/post");
 
 // ✅ Update profile image
 router.post("/update-image", async (req, res) => {

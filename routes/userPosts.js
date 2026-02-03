@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const connectDB = require("../db"); // your MongoDB connect helper
-const Post = require("../models/Post"); // adjust path if needed
+const connectDB = require("../mongodb/db"); // your MongoDB connect helper
+const Post = require("../mongodb/models/post"); // adjust path if needed
 
 // ================= GET POSTS BY USER =================
 // GET /api/userPosts?user_id=123

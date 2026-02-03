@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Post = require("../models/Post");
+const Post = require("../mongodb/models/post");
 
 // ================= GET SINGLE POST =================
 // GET /api/marketPosts/:post_id

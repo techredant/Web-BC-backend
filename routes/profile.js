@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Profile = require("../models/Profile");
+const Profile = require("../mongodb/models/profile");
 
 // Middleware to get user (replace with JWT or Clerk backend verification)
 const authMiddleware = (req, res, next) => {

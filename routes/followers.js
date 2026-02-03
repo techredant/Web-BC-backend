@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const Followers = require("../models/Followers");
-const Profile = require("../models/Profile");
+const Followers = require("../mongodb/models/followers");
+const Profile = require("../mongodb/models/profile");
 
 // ================= GET FOLLOWERS & FOLLOWING =================
 // /api/followers?userId=123
