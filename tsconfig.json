@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "target": "ES2017"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "../backend/.next/types/**/*.ts",
+    "middleware.ts"
+, "../frontend/lib/formatnumber.ts", "routes/account.js", "routes/marketPosts.js", "routes/myProfile.js", "routes/users.js", "routes/userPosts.js", "routes/user.js", "routes/ai-reply.js", "routes/token.js", "routes/upsert.js", "routes/statusPosts.js", "routes/search.js", "routes/profile.js", "routes/posts.js", "routes/comments.js", "routes/like.js", "routes/view.js", "routes/followers.js", "routes/news.js", "routes/recast.js", "routes/unlike.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
