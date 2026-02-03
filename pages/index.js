@@ -5,17 +5,17 @@ const cors = require("cors");
 const serverless = require("serverless-http");
 
 // ROUTES
-const account = require("./routes/account");
-const followers = require("./routes/followers");
-const marketPosts = require("./routes/marketPosts");
-const myProfile = require("./routes/myProfile");
-const profileRoute = require("./routes/profile");
-const news = require("./routes/news");
-const posts = require("./routes/posts");
-const search = require("./routes/search");
-const statusPosts = require("./routes/statusPosts");
-const user = require("./routes/user");
-const userPosts = require("./routes/userPosts");
+const account = require("../routes/account");
+const followers = require("../routes/followers");
+const marketPosts = require("../routes/marketPosts");
+const myProfile = require("../routes/myProfile");
+const profileRoute = require("../routes/profile");
+const news = require("../routes/news");
+const posts = require("../routes/posts");
+const search = require("../routes/search");
+const statusPosts = require("../routes/statusPosts");
+const user = require("../routes/user");
+const userPosts = require("../routes/userPosts");
 
 const app = express();
 app.use(cors());
