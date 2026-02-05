@@ -1,20 +1,21 @@
-import express from "express";
-import mongoose from "mongoose";
-import cors from "cors";
-import serverless from "serverless-http";
+require("dotenv").config();
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+const serverless = require("serverless-http");
 
 // ROUTES
-import account from "../../routes/account";
-import followers from "../../routes/followers";
-import marketPosts from "../../routes/marketPosts";
-import myProfile from "../../routes/myProfile";
-import profileRoute from "../../routes/profile";
-import news from "../../routes/news";
-import posts from "../../routes/posts";
-import search from "../../routes/search";
-import statusPosts from "../../routes/statusPosts";
-import user from "../../routes/user";
-import userPosts from "../../routes/userPosts";
+const account = require("./routes/account");
+const followers = require("./routes/followers");
+const marketPosts = require("./routes/marketPosts");
+const myProfile = require("./routes/myProfile");
+const profileRoute = require("./routes/profile");
+const news = require("./routes/news");
+const posts = require("./routes/posts");
+const search = require("./routes/search");
+const statusPosts = require("./routes/statusPosts");
+const user = require("./routes/user");
+const userPosts = require("./routes/userPosts");
 
 const app = express();
 app.use(cors());
@@ -63,10 +64,6 @@ app.use("/api/statusPosts", statusPosts);
 app.use("/api/user", user);
 app.use("/api/userPosts", userPosts);
 
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
-
-export default serverless(app);
+// Export serverless handler
+module.exports = app;
+module.exports = serverless(app);
